@@ -14,7 +14,7 @@ const LoginPage = ({ setIsAuthenticated }: { setIsAuthenticated: (auth: boolean)
     const correctUsername = "admin"; // The user username to login
     const correctPassword = "123"; // The user password to login
 
-    // Check if username and password match
+    // if username and password match
     if (username === correctUsername && password === correctPassword) {
       localStorage.setItem("isAuthenticated", "true"); // Save login status in browser
       setIsAuthenticated(true); // Tell the app the user is logged in
